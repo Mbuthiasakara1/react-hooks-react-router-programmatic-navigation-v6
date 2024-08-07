@@ -15,6 +15,7 @@ function Login() {
 
   function handleLogin(e) {
     e.preventDefault();
+    Login();
   }
 
   return (
@@ -37,7 +38,7 @@ function Login() {
           name="password"
           value={formData.password}
           onChange={handleChange}
-        />      
+        />
       </div>
       <button type="submit">Login</button>
     </form>
